@@ -1,5 +1,5 @@
 const asyncHandler = (requestHadler) => {
-  (req, res, next) => {
+  return (req, res, next) => {
     Promise.resolve(requestHadler(req, res, next)).catch((err) => next(err));
   };
 };
@@ -16,3 +16,16 @@ const asyncHandler = (requestHadler) => {
       });
   }
 };*/
+
+/*const asyncHandler = (fn) => (req, res, next) => {
+  Promise.resolve(fn(req, res, next)).catch(next);
+};
+
+app.get(
+  "/users",
+  asyncHandler(async (req, res) => {
+    const users = await getUsersFromDB();
+    res.json(users);
+  })
+);
+*/
