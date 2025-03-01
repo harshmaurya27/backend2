@@ -1,4 +1,4 @@
 # backend
 
-this backend endpoint for YouTube like application 
+backend endpoint for YouTube like application 
 
