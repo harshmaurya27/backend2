@@ -1,3 +1,4 @@
 # backend
 
-this i s simple backend with javascript
+this backend endpoint for YouTube like application 
+
